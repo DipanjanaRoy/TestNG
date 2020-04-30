@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Movies]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Important Movies(failed)">
+    <classes>
+      <class name="packageTwo.Movies7">
+        <methods>
+          <include name="horrorMovieSeventhOne"/>
+        </methods>
+      </class> <!-- packageTwo.Movies7 -->
+    </classes>
+  </test> <!-- Important Movies(failed) -->
+</suite> <!-- Failed suite [Movies] -->

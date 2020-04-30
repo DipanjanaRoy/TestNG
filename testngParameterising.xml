@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!-- Parameterising from TestNG (These parameters are going to be same for all the Tests) -->
+<!-- Parameterising can be done at suite level and test level(Below is the Suit level example) -->
+<suite name="Movies">
+<parameter name="URL" value="https://in.bookmyshow.com/"></parameter>
+<parameter name="URL2" value="https://in.bookmyshow.com/kolkata/movies/asur/ET00110966"></parameter>
+	<test thread-count="5" name="Very Important Movies">
+		<classes>
+			<class name="packageTwo.Movies5" />
+			<class name="packageTwo.Movies6" />
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Important Movies">
+		<classes>
+			<class name="packageTwo.Movies7" />
+		
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

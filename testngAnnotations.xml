@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Movies">
+	<test thread-count="5" name="Romantic Movies">
+		<classes>
+			<class name="packageTwo.Movies">
+				<methods>
+					<exclude name="comedyMovie.*"></exclude>
+			
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+	<test name="Comedy Movies">
+		<classes>
+			<class name="packageTwo.Movies">
+				<methods>
+					<exclude name="romanticMovieFirst"></exclude>
+					<exclude name="romanticMovieSecond"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->

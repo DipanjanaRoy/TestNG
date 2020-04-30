@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Running Two Tests in parallel -->
+<!-- Running Two classes in parallel in 1st Test -->
+<suite name="Movies" parallel="tests" thread-count="2">
+<test  name="Very Important Movies" parallel="classes" thread-count="2">
+		<classes>
+			<class name="packageTwo.Movies" />
+			<class name="packageTwo.Movies2" />
+		</classes>
+	</test> <!-- Test -->
+	
+		<test name="Important Movies">
+		<classes>
+			<class name="packageTwo.Movies3" />
+		
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->
